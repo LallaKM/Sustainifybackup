@@ -62,9 +62,9 @@ struct Home: View {
                 . buttonStyle(.borderedProminent)
                 .tint(Color(.sRGB, red: 0.2039, green: 0.3059, blue: 0.2549))
 
-                    NavigationLink(destination: Calendar()) {
-                        Text("Enviromental Calendar")
-                    }
+                    NavigationLink(destination: ActivityLogView()) { // Use ActivityLogView instead of Calendar
+                                       Text("Environmental Calendar")
+                                   }
 
                 . buttonStyle(.borderedProminent)
                 .tint(Color(.sRGB, red: 0.2039, green: 0.3059, blue: 0.2549))
